@@ -296,8 +296,31 @@ def asmit():
                     speak(f"you'd like me to call you by the name {new_fg}. is that right")
         elif "month" in query:
             today = datetime.datetime.now().strftime('%m')
-            speak(today)
             stream.start_stream()
+            if today == '01':
+                speak("january")
+            if today == '02':
+                speak("february")
+            if today == '03':
+                speak("march")
+            if today == '04':
+                speak("april")
+            if today == '05':
+                speak("may")
+            if today == '06':
+                speak("june")
+            if today == '07':
+                speak("july")
+            if today == '08':
+                speak("august")
+            if today == '09':
+                speak("september")
+            if today == '10':
+                speak("october")
+            if today == '11':
+                speak("november")
+            if today == '12':
+                speak("december")
 
 
         elif "who are you" in query:
